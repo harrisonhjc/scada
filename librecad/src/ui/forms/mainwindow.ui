@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>734</width>
+    <height>572</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>遠端圖形監控系統</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QTreeView" name="view">
+      <property name="alternatingRowColors">
+       <bool>true</bool>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectItems</enum>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>64</width>
+        <height>64</height>
+       </size>
+      </property>
+      <property name="textElideMode">
+       <enum>Qt::ElideNone</enum>
+      </property>
+      <property name="horizontalScrollMode">
+       <enum>QAbstractItemView::ScrollPerPixel</enum>
+      </property>
+      <property name="animated">
+       <bool>false</bool>
+      </property>
+      <property name="allColumnsShowFocus">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>734</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="fileMenu">
+    <property name="title">
+     <string>&amp;檔案</string>
+    </property>
+    <addaction name="actionSave"/>
+    <addaction name="exitAction"/>
+   </widget>
+   <widget class="QMenu" name="actionsMenu">
+    <property name="title">
+     <string>&amp;圖點</string>
+    </property>
+    <addaction name="insertRowAction"/>
+    <addaction name="separator"/>
+    <addaction name="removeRowAction"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>&amp;樓層</string>
+    </property>
+    <addaction name="insertChildAction_2"/>
+    <addaction name="removeRowAction_2"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>設定</string>
+    </property>
+    <addaction name="actionUser_Manager"/>
+   </widget>
+   <widget class="QMenu" name="menuSupervise">
+    <property name="title">
+     <string>監控</string>
+    </property>
+    <addaction name="actionStartSupervise"/>
+    <addaction name="actionStopSupervise"/>
+   </widget>
+   <addaction name="fileMenu"/>
+   <addaction name="actionsMenu"/>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menuSupervise"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="exitAction">
+   <property name="text">
+    <string>離開</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="insertRowAction">
+   <property name="text">
+    <string>新增圖點</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I, R</string>
+   </property>
+  </action>
+  <action name="removeRowAction">
+   <property name="text">
+    <string>移除圖點</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R, R</string>
+   </property>
+  </action>
+  <action name="insertColumnAction">
+   <property name="text">
+    <string>Insert Column</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I, C</string>
+   </property>
+  </action>
+  <action name="removeColumnAction">
+   <property name="text">
+    <string>Remove Column</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R, C</string>
+   </property>
+  </action>
+  <action name="insertChildAction">
+   <property name="text">
+    <string>Insert Child</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="insertChildAction_2">
+   <property name="text">
+    <string>新增樓層</string>
+   </property>
+  </action>
+  <action name="removeRowAction_2">
+   <property name="text">
+    <string>移除樓層</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>儲存</string>
+   </property>
+  </action>
+  <action name="actionUser_Manager">
+   <property name="text">
+    <string>使用者管理</string>
+   </property>
+  </action>
+  <action name="actionStartSupervise">
+   <property name="text">
+    <string>啟動</string>
+   </property>
+  </action>
+  <action name="actionStopSupervise">
+   <property name="text">
+    <string>停止</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

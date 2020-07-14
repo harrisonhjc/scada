@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/main">
+        <file>contents.png</file>
+        <file>document.png</file>
+        <file>editclear.png</file>
+        <file>filenew.png</file>
+        <file>fileopen.png</file>
+        <file>filesave.png</file>
+        <file>intro_librecad.png</file>
+        <file>manual.png</file>
+        <file>donate.png</file>
+        <file>alertfire.png</file>
+        <file>alertsmoke.png</file>
+        <file>librecad.png</file>
+        <file>scada.png</file>
+        <file>building.png</file>
+        <file>floor.png</file>
+        <file>bluelight.png</file>
+        <file>greenlight.png</file>
+        <file>redlight.png</file>
+        <file>trafficlight.png</file>
+        <file>yellowlight.png</file>
+        <file>scadasplash.png</file>
+        <file>check.png</file>
+        <file>pinklight.png</file>
+        <file>logo.png</file>
+        <file>logo1.png</file>
+    </qresource>
+</RCC>

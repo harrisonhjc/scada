@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SV_DisplayEventStatus</class>
+ <widget class="QWidget" name="SV_DisplayEventStatus">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>242</width>
+    <height>281</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>242</width>
+    <height>281</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>242</width>
+    <height>281</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>微軟正黑體</family>
+    <pointsize>18</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QLabel" name="lb_title">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>10</y>
+     <width>221</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>20</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+color:white;</string>
+   </property>
+   <property name="text">
+    <string>訊息狀態</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_red">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>63</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>20</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+color : white</string>
+   </property>
+   <property name="text">
+    <string>火警</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_magenta">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>102</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>20</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+color :white</string>
+   </property>
+   <property name="text">
+    <string>故障</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_blue">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>183</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>20</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+color : white</string>
+   </property>
+   <property name="text">
+    <string>確認</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_yellow">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>221</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>20</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+color : white</string>
+   </property>
+   <property name="text">
+    <string>蓄積</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_green">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>143</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>20</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+color :white</string>
+   </property>
+   <property name="text">
+    <string>控制</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb1">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>60</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>AcadEref</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border-color: black;
+border-width: 1px;
+border-style: solid;
+border-radius: 4px;
+color : rgb(4,37,94)</string>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb2">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>100</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>AcadEref</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: magenta;
+border-color: black;
+border-width: 1px;
+border-style: solid;
+border-radius: 4px;
+color : rgb(4,37,94)</string>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb3">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>140</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>AcadEref</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,255,0);
+border-color: black;
+border-width: 1px;
+border-style: solid;
+border-radius: 4px;
+color : rgb(4,37,94)</string>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb4">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>180</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>AcadEref</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0,100,255);
+border-color: black;
+border-width: 1px;
+border-style: solid;
+border-radius: 4px;
+color : rgb(4,37,94)</string>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb5">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>220</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>AcadEref</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255,255,0);
+border-color: black;
+border-width: 1px;
+border-style: solid;
+border-radius: 4px;
+color : rgb(4,37,94)</string>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>241</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(1,37,44);
+border-color: rgba(1,37,44);
+border-width: 1px;
+border-style: solid;
+border-radius: 8px;
+color : rgb(1,37,44)</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <zorder>frame</zorder>
+  <zorder>lb_title</zorder>
+  <zorder>lb_red</zorder>
+  <zorder>lb_magenta</zorder>
+  <zorder>lb_blue</zorder>
+  <zorder>lb_yellow</zorder>
+  <zorder>lb_green</zorder>
+  <zorder>lb1</zorder>
+  <zorder>lb2</zorder>
+  <zorder>lb3</zorder>
+  <zorder>lb4</zorder>
+  <zorder>lb5</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

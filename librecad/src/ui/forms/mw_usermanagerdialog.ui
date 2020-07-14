@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MW_userManagerDialog</class>
+ <widget class="QDialog" name="MW_userManagerDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>使用者管理</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>使用者</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>密碼</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>確認密碼</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxBuilding">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>140</y>
+     <width>301</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>新增 / 刪除樓層</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxSensor">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>170</y>
+     <width>301</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>編輯樓層感測器</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxSupervise">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>200</y>
+     <width>311</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>監控</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>110</y>
+     <width>321</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>114</y>
+     <width>47</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>權限</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>220</y>
+     <width>321</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_3">
+   <property name="geometry">
+    <rect>
+     <x>364</x>
+     <y>119</y>
+     <width>16</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lePasswd">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>50</y>
+     <width>281</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>32</number>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lePasswd_2">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>80</y>
+     <width>281</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>32</number>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pBaddUSer">
+   <property name="geometry">
+    <rect>
+     <x>128</x>
+     <y>255</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>新增</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pBDeleteUser">
+   <property name="geometry">
+    <rect>
+     <x>213</x>
+     <y>255</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>刪除</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pBCancel">
+   <property name="geometry">
+    <rect>
+     <x>298</x>
+     <y>255</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cBUser">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>20</y>
+     <width>281</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>cBUser</tabstop>
+  <tabstop>lePasswd</tabstop>
+  <tabstop>lePasswd_2</tabstop>
+  <tabstop>checkBoxBuilding</tabstop>
+  <tabstop>checkBoxSensor</tabstop>
+  <tabstop>checkBoxSupervise</tabstop>
+  <tabstop>pBaddUSer</tabstop>
+  <tabstop>pBDeleteUser</tabstop>
+  <tabstop>pBCancel</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>lePasswd</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MW_userManagerDialog</receiver>
+   <slot>on_lePasswd_editingFinished()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>230</x>
+     <y>59</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lePasswd_2</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MW_userManagerDialog</receiver>
+   <slot>on_lePasswd_2_editingFinished()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>230</x>
+     <y>89</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>on_leUser_editingFinished()</slot>
+  <slot>on_lePasswd_editingFinished()</slot>
+  <slot>on_lePasswd_2_editingFinished()</slot>
+ </slots>
+</ui>
